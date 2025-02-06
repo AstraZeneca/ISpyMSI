@@ -1,0 +1,15 @@
+name: ispy-msi
+channels:
+  - main
+dependencies:
+  - python<=3.12
+  - pip
+  - pip:
+    - torch
+    - black
+    - pylint
+    - pytest
+    - pydocstyle
+    - mypy
+    - pre-commit
+    - -e .
