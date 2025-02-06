@@ -1,0 +1,43 @@
+repos:
+  - repo : local
+    hooks :
+    - id: black
+      name: Running black
+      language: system
+      entry: black
+      pass_filenames: true
+      types: [file, python]
+      stages: [pre-commit]
+
+    - id: pylint
+      name: Running pylint
+      language: system
+      entry: pylint
+      pass_filenames: true
+      types: [file, python]
+      stages: [pre-commit]
+
+    - id: mypy
+      name: Running mypy
+      language: system
+      entry: mypy
+      pass_filenames: true
+      types: [file, python]
+      stages: [pre-commit]
+      exclude: ^setup.*.py$
+
+    - id: pydocstyle
+      name: Running pydocstyle
+      language: system
+      entry: pydocstyle --convention=numpy
+      pass_filenames: true
+      types: [file, python]
+      stages: [pre-commit]
+
+    - id: Pytest
+      name: Pytest
+      language: system
+      entry: pytest tests/
+      pass_filenames: false
+      always_run: true
+      stages: [pre-push]
