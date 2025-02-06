@@ -1,4 +1,4 @@
-# [``ISpyMSI``](https://bitbucket.astrazeneca.com/projects/IMGGRP/repos/ispymsi/browse): Mass spectrometry tissue segmentation project.
+# ``ISpyMSI``: Mass spectrometry tissue segmentation project.
 
 
 
