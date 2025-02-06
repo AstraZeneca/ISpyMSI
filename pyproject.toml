@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ispy_msi"
+version = "0.0.0"
+description = "Mass spec. tissue segmentation project."
+
+authors = [
+  { name="Jim Denholm", email="jd949@cam.ac.uk"},
+]
+readme = "README.md"
+
+dependencies = ["pyimzML", "pandas", "pyarrow", "pandas-stubs", "scikit-image", "torch", "tifffile", "matplotlib", "scikit-learn", "torch_tools @ git+https://github.com/jdenholm/TorchTools.git", "tiffslide", "shapely"]
+
+# [project.urls]
+# "Homepage" = ""
+
+
+[tool.setuptools]
+package-dir = {}
+
+[tool.setuptools.package-data]
+torch_tools = ["py.typed"]
