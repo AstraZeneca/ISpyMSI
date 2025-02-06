@@ -1,0 +1,51 @@
+name,mass_to_charge,immuno_metab,tca
+pyruvate,87.008769,True,True
+lactate,89.024419,True,False
+fumarate,115.003684,False,True
+succinate,117.01933,True,True
+malate,133.01425,True,True
+a-ketoglutatrate,145.01425,False,False
+glutamine,145.06187,True,False
+glutamate,146.04588,True,False
+citrate,191.01973,True,True
+glucose,215.03279,True,False
+cystathionine,221.059054,False,False
+adenosine,302.06616,True,False
+glutathione (gsh),306.0765,False,False
+fa 22_6 docosahexaenoic acid,327.23186,False,False
+fa 16_0 palmitic acid,255.231857,False,False
+fa 16_1 palmitoleic acid,253.21621,False,False
+fa 18_0 stearic acid,283.263157,False,False
+fa 18_1 oleic acid,281.247507,False,False
+fa 18_2 linoleic acid,279.231857,False,False
+fa 18_3 linolenic acid,277.216207,False,False
+fa 20_0 arachidic acid,311.294457,False,False
+fa 20_2 eicosadienoic acid,307.26327,False,False
+fa 20_3 eicosatrienoic acid,305.24751,False,False
+fa 20_4 arachidonic acid,303.232954,False,False
+fa 20_5 eicosapentaenoic acid,301.21621,False,False
+fa 22_5 docosapentaenoic acid,329.24751,False,False
+fa 24_1 nervonic acid,365.341407,False,False
+serine,104.035318,False,False
+tryptophan,203.082603,True,False
+cholesterol-sulfate,465.303307,True,False
+glucose-6-phosphate,259.022447,True,False
+fructose 1_6-bisphosphate,338.988773,False,False
+panthetonic acid,218.1038,True,False
+uric acid,167.021065,True,False
+imp,347.03982,True,False
+uracil,111.020002,True,False
+uridine,243.0623,True,False
+ump,323.02859,True,False
+amp,346.05581,True,False
+adp,426.02214,True,False
+ornithine,131.081504,True,False
+aspartate,132.03023,True,False
+arginine,173.1044,True,False
+hydroxybutyrate,103.0401,True,False
+itaconate,129.019334,True,False
+fa 20:4 arachidonic acid,303.232954,True,False
+fa 22:6 docosahexaenoic acid,327.23186,True,False
+gsh,306.07653,True,False
+a-ketoglutarate,145.01425,True,True
+aconitate,173.0092,True,False
