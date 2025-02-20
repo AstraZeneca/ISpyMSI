@@ -13,7 +13,7 @@ authors = [
 ]
 readme = "README.md"
 
-dependencies = ["pyimzML", "pandas", "pyarrow", "pandas-stubs", "scikit-image", "torch", "tifffile", "matplotlib", "scikit-learn", "torch_tools @ git+https://github.com/jdenholm/TorchTools.git", "tiffslide", "shapely"]
+dependencies = ["pyimzML==1.5", "pandas==2.2", "pandas-stubs", "pyarrow==19.0", "scikit-image==0.25", "torch==2.3", "torchvision==0.18", "tifffile==2025.2.18", "matplotlib==3.10", "scikit-learn==1.6", "torch_tools @ git+https://github.com/jdenholm/TorchTools.git@v0.13.0", "tiffslide==2.4", "shapely==2.0.7"]
 
 # [project.urls]
 # "Homepage" = ""
