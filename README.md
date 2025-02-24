@@ -88,9 +88,7 @@ In this work we used [``QuPath v0.4.3``](https://github.com/qupath/qupath/releas
 └── qupath-project
 ```
 
-### 3. Prepare your data
-
-### 4. Extract information from the MSI files
+### 3. Extract information from the MSI files
 Run
 ```bash
 ./scripts/extract_mass_spec_info.py /path/to/proj-parent
@@ -106,7 +104,7 @@ where the path is to the folder containing your ``.imzML`` and ``.ibd`` files. T
 ```
 
 
-### 5. Record landmarks
+### 4. Record landmarks
 Run
 ```bash
 ./scripts/record_landmarks.py /path/to/proj-parent
@@ -132,7 +130,7 @@ After completing this step, your folder should look like
 ```
 
 
-### 6. Extract patches
+### 5. Extract patches
 To extract the patches, run
 ```bash
 ./scripts/extract_patches.py /path/to/proj-parent/images-and-masks/
@@ -140,7 +138,7 @@ To extract the patches, run
 Again, use ``--help`` for more info.
 
 
-### 7. Training the model
+### 6. Training the model
 To train the model, run
 ```bash
 ./scripts/train_segmentation_model.py /patch/parent/dir/
@@ -148,7 +146,7 @@ To train the model, run
 It is strongly recommended to run this with ``--help`` first.
 
 
-### 8. Testing the model
+### 7. Testing the model
 To test the model, on unseen data, first run
 ```bash
 ./scripts/test_segmentation_model.py --help
