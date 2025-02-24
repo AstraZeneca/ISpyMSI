@@ -38,6 +38,12 @@ conda env update -f requirements_dev.conda.yaml
 ```
 Note, the requirements for the python package are in the file [pyproject toml](pyproject.toml).
 
+### Pre-commit hooks
+After creating and activating the environment, please use the pre-commit hooks by running
+```bash
+pre-commit install
+```
+
 
 ### Recreating the paper analysis (with your own data)
 
