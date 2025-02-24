@@ -45,9 +45,9 @@ pre-commit install
 ```
 
 
-### Recreating the paper analysis (with your own data)
+## Recreating the paper analysis (with your own data)
 
-### Structuring your project
+### 1. Structuring your project
 Create a directory, which will serve as the parent directory for your entire project. For the sake of this example, we will call it ``proj-parent``.
 
 The structure should look like this:
@@ -65,7 +65,7 @@ The structure should look like this:
     - "msi_microns_pp" should be a float.
 
 
-#### Labelling the slides: QuPath
+### 2. Labelling the slides: QuPath
 In this work we used [``QuPath v0.4.3``](https://github.com/qupath/qupath/releases/tag/v0.4.3).
 
 - Install QuPath, create a project, and add your H&Es. Your project dir might now look like:
@@ -88,9 +88,9 @@ In this work we used [``QuPath v0.4.3``](https://github.com/qupath/qupath/releas
 └── qupath-project
 ```
 
-#### Prepare your data
+### 3. Prepare your data
 
-#### Extract information from the MSI files
+### 4. Extract information from the MSI files
 Run
 ```bash
 ./scripts/extract_mass_spec_info.py /path/to/proj-parent
@@ -106,7 +106,7 @@ where the path is to the folder containing your ``.imzML`` and ``.ibd`` files. T
 ```
 
 
-#### Record landmarks
+### 5. Record landmarks
 Run
 ```bash
 ./scripts/record_landmarks.py /path/to/proj-parent
@@ -132,7 +132,7 @@ After completing this step, your folder should look like
 ```
 
 
-#### Extract patches
+### 6. Extract patches
 To extract the patches, run
 ```bash
 ./scripts/extract_patches.py /path/to/proj-parent/images-and-masks/
@@ -140,7 +140,7 @@ To extract the patches, run
 Again, use ``--help`` for more info.
 
 
-#### Training the model
+### 7. Training the model
 To train the model, run
 ```bash
 ./scripts/train_segmentation_model.py /patch/parent/dir/
@@ -148,7 +148,7 @@ To train the model, run
 It is strongly recommended to run this with ``--help`` first.
 
 
-#### Testing the model
+### 8. Testing the model
 To test the model, on unseen data, first run
 ```bash
 ./scripts/test_segmentation_model.py --help
