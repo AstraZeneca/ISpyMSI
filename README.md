@@ -2,6 +2,7 @@
 
 # ``ISpyMSI``: Mass spectrometry tissue segmentation project.
 
+This project contains a python package, and associated scripts, for automating the detection of tissue in mass spectrometry images using a convolutional neural network. It accompanies the paper "Automatic tissue segmentation in mass spectrometry images" [link placeholder](...).
 
 
 ## Installation
@@ -13,6 +14,9 @@ pip install .
 ```
 Note: it would be a good idea to do this inside a virtual Python env.
 
+### Software requirements
+The software requirements are defined in the [pyproject toml](pyproject.toml).
+
 
 ## Using this method
 
@@ -22,6 +26,18 @@ git clone ...
 ```
 
 ### Create the virtual environment
+
+To create the virtual environment, we strongly suggest conda. To create it, use
+```bash
+conda env create -f requirements_dev.conda.yaml
+```
+
+If you modify it for your own purposes, remember to run
+```bash
+conda env update -f requirements_dev.conda.yaml
+```
+Note, the requirements for the python package are in the file [pyproject toml](pyproject.toml).
+
 
 ### Recreating the paper analysis (with your own data)
 
